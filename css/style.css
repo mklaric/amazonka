@@ -1,0 +1,156 @@
+/*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css);
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web');
+
+
+.left { float:left; }
+.right { float:right; }
+.clear{ clear:both; }
+
+/* za link na recenzije*/
+.link {
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444; 
+     border-color:blue;
+     cursor: pointer;
+     color:blue;
+}
+
+
+
+body
+{
+    background-color: rgba(0,0,0,0.08);
+    font-family: "Titillium Web";
+}
+
+/* ime produkta. glupo. poljepšaj 
+.ime_prod
+{
+	font-size: 1.5em; 
+    margin-bottom: .5rem;
+    font-style: italic;
+
+}*/
+a
+{
+    text-decoration: none;
+    color:black;
+}
+
+
+.navbar-fixed 
+{
+    font-size: 1.5em; 
+    text-align: center; 
+    background-color:#A6E72D;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-bottom: 100;
+  /*z-index: 1030;*/
+  box-shadow: 0 15px 40px white;
+}
+
+h2
+{
+    font-size: 1.3em;
+}
+ 
+.manje
+{
+    font-size: 0.9em;
+}
+
+
+.kocka
+{
+    width: 75%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 10px;
+    margin-top: 50px;
+
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.40);
+    margin:0 auto;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+/* Ratings widget */
+
+.fa
+{
+    color:#73B100;
+}
+.rate, .fa {
+    display: inline-block;
+    border: 0;
+
+}
+/* Hide radio */
+.rate > input {
+    display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label {
+    float: right;
+}
+/* The star of the show */
+.rate > label:before, .fa {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 2;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f006 "; /* full star */
+}
+/* Zero stars rating 
+.rate > label:last-child:before {
+    content: "\f006 "; /* empty star outline 
+}*/
+
+/* Click + hover color */
+input:checked ~ label, /* color current and previous stars on checked */
+label:hover, label:hover ~ label { color: #73B100; content: "\f005 " } /* color previous stars on hover */
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+label:hover ~ input:checked ~ label /* highlight previous selected stars */ { color: #A6E72D;  } 
+
+/* kućice gdje upisuje nick*/
+input[name=name], textarea
+{
+    width: 70%;
+    padding: 5px 10px;
+    margin: 10px 4px 10px 4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea
+{
+    width: 90%;
+}
+
+/*gumb Review*/
+.review
+{
+    background-color: #A6E72D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
